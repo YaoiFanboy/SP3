@@ -1,0 +1,36 @@
+SQL Query's die zijn gebruikt:
+
+Om een nieuwe tabel te maken gebaseerd op een oude:
+CREATE TABLE new_table_name AS
+    #SELECT column1, column2,...
+    #FROM existing_table_name
+    #WHERE ....;
+
+Om een gehele nieuwe tabel te maken via python:
+
+cur.execute("""CREATE TABLE products
+                (id VARCHAR PRIMARY KEY,
+                 name VARCHAR,
+                 brand VARCHAR,
+                 type VARCHAR,
+                 category VARCHAR,
+                 subcategory VARCHAR,
+                 subsubcategory VARCHAR,
+                 targetaudience VARCHAR,
+                 msrp INTEGER,
+                 discount INTEGER,
+                 sellingprice INTEGER,
+                 deal VARCHAR,
+                 description VARCHAR);""")
+
+SELECT * FROM table_name om alle gegevens van een tabel optevragen 
+
+WHERE column_name LIKE '%Word%' om een specifiek element te vinden
+
+WHERE column1 LIKE '%word1%'
+  AND column1 LIKE '%word2%'
+  AND column1 LIKE '%word3%' om meerdere condities in te stellen en gegevens terug te vragen die hieraan voldoen.
+
+DROP TABLE tabel_naam; om een tabel te verwijderen.
+
+

@@ -27,6 +27,12 @@ def prod_id_to_name(product):
         cur.execute('''select name from products where id = %s ''',[product])
         naam = cur.fetchall()
         print(naam)
+ 
+#
+def prod_name_to_id(product_name):
+        cur.execute('''select id from products where name = %s ''',[product_name])
+        id = cur.fetchall()
+        print(id)
 
 #voorbeeld:
 Filter('Vrouwen', 'Lichaamsverzorging','Spray', 'Deodorant')

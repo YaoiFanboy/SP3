@@ -1,2 +1,5 @@
-# SP3
-Opdracht voor SP 3
+# Opdracht SP3
+
+Opdracht 3 van het vak structured programming op de HU.
+
+

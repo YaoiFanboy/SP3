@@ -11,7 +11,9 @@ https://stackoverflow.com/
 https://pythonguides.com/python-dictionary-of-tuples/
 https://www.w3schools.com/sql/sql_drop_table.asp
 https://towardsdatascience.com/data-science-lesson-3-filtering-data-using-sql-45d90986487f
+
 https://tableplus.com/
+
 https://medium.com/humansforai/recommendation-engines-e431b6b6b446
 
 

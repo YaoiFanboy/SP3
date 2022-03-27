@@ -3,14 +3,22 @@ Onderbouwing regels:
 Het is belangrijk voor de reccomendation engine om het product id makkelijk te kunnen vinden 
 bij de naam van een product en vica versa. (Dit heeft volgens mij geen uitleg nodig maar ik moet minimaal een 3,2 halen dus ik ga het toch vermelden.)
 
+
 Zonder de product id kan de engine niet makkelijk het juiste product vinden in de database op basis van de naam. 
 Het kan bijvoorbeeld ook zo zijn dat producten bijna de zelfde namen hebben, dus is het makkelijker om een uniek nummer te geven aan ieder product.
+
 
 Zonder een product naam weten we niet welk product de engine aanraad en moeten we het handmatig zoeken in de database.
 Dit maakt het moeilijk om te zien of de engine goeie producten aanraad, en maakt het hele programma onoverzichtelijk.
 Uiteindelijk moeten we ook een normale product naam terug geven aan de klant.
 
+
 Voor de content filtering heb ik gekozen om gebruik te maken van de eigenschappen: targetaudience, subcategory, type en subsubcategory.
+Hiervoor is gekozen omdat deze bij de steekproeven gemiddeld 150 producten terugeven. dit is wellicht iets te breed maar een goeie basis voor de engine
+die makkelijk uitebreiden is met bijvoorbeeld een prijs eigenschap.
+
+
+
 
 
 

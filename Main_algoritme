@@ -8,32 +8,45 @@ cur = c.cursor()
 
 #zoekt producten met specifieke targetaudience, subcategory, type en subsubcategory, voer de gegevens in deze volgorde in.
 def Filter(target, subcat, type, subsubcat):
-    try:
         cur.execute('''select id from products where targetaudience = %s and subcategory = %s and type = %s 
         and subsubcategory = %s''',
         [target,subcat,type,subsubcat])
- 
+
         #vergeef me
         global result
-        result = cur.fetchall()
+        result= cur.fetchall()
         print(result)
-        print('done')
+        print('Filter functie klaar')
+        
+        if result==[]:
+            print('iemand heeft de instructies niet gevolgt')
     
-    except:
-        print('iemand heeft de instructies niet gevolgt')
-    
-#1 id van een product invulen en daar de naam van krijgen.
-def prod_id_to_name(product):
-        cur.execute('''select name from products where id = %s ''',[product])
-        naam = cur.fetchall()
-        print(naam)
- 
-#
-def prod_name_to_id(product_name):
-        cur.execute('''select id from products where name = %s ''',[product_name])
-        id = cur.fetchall()
-        print(id)
 
-#voorbeeld:
+#1 id van een product invulen en daar de naam van krijgen.
+def prod_id_to_name(product_id):
+
+            cur.execute('''select name from products where id = %s ''',[product_id])
+            naam= cur.fetchall()
+            print(naam)
+            print('id naar naam functie klaar')
+
+            if naam==[]:
+                print('er is ergens iets verkeerd gegaan')
+
+
+# naam van de product invullen en daar de id van krijgen
+def prod_name_to_id(product_name):
+
+         cur.execute('''select id from products where name = %s ''',[product_name])
+         id= cur.fetchall()
+         print(id)
+         print('naam naar id functie klaar')
+
+         if id==[]:
+             print('404 er is iets misgegaan')
+
+
+#voorbeelden:
 Filter('Vrouwen', 'Lichaamsverzorging','Spray', 'Deodorant')
 prod_id_to_name('29782')
+prod_name_to_id('8x4 Deodorant Spray Unity 150 ml')

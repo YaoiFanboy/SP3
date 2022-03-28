@@ -8,7 +8,8 @@ SQL Query's die gebruikt zijn in pg admin 4 en deze readme file.
 De bestanden om de database kunnen niet worden geupload gezien ze te groot zijn. 
 
 Na het aanmaken van de databases hoeft alleen het main python bestand gerunt te worden, 
-wel moeten de gewenste parameters meegegeven worden in de code.
+wel moeten de gewenste parameters meegegeven worden in de code. Het doel van de code 
+is om een database te filteren zodat er relevante informatie ontstaat voor een recommendation engine
 
 
 Bronnen gebruikt bij deze opdracht:

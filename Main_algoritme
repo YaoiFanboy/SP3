@@ -1,5 +1,5 @@
-
 import psycopg2
+import random 
 
 #connectie met de database maken
 c = psycopg2.connect("dbname=postgres user=postgres password=Kenan123") #TODO: je eigen, hoppelijk betere wachtwoord invullen samen met de andere gegevens.
@@ -12,8 +12,6 @@ def Filter(target, subcat, type, subsubcat):
         and subsubcategory = %s''',
         [target,subcat,type,subsubcat])
 
-        #vergeef me
-        global result
         result= cur.fetchall()
         print(result)
         print('Filter functie klaar')
@@ -21,6 +19,15 @@ def Filter(target, subcat, type, subsubcat):
         if result==[]:
             print('iemand heeft de instructies niet gevolgt')
     
+#begin functie collab filtering die niet werkt nog
+
+#def test():
+    #cur.execute('''select id from profiles where segment = JUDGER ''')
+    #results= cur.fetchall()
+    #print(results)
+
+
+
 
 #1 id van een product invulen en daar de naam van krijgen.
 def prod_id_to_name(product_id):

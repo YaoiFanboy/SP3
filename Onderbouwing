@@ -17,8 +17,8 @@ Voor de content filtering heb ik gekozen om gebruik te maken van de eigenschappe
 Hiervoor is gekozen omdat deze bij de steekproeven gemiddeld 150 producten terugeven. dit is wellicht iets te breed maar een goeie basis voor de engine
 die makkelijk uitebreiden is met bijvoorbeeld een prijs eigenschap.
 
-Voor de collab filtering was het plan om van profiles segments te pakken en die terug te koppelen aan profiles_previously_viewed,
-om vervolgens daarvan een product aan te raden. dit is op het moment van schrijven niet gelukt.
+Voor de collab filtering was het plan om van profiles een id te pakken, bij segments iets als bouncer of buyer pakken 
+en die terug te koppelen aan profiles_previously_viewed om vervolgens daarvan een product aan te raden. dit is op het moment van schrijven niet gelukt.
 
 
 
